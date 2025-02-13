@@ -1,0 +1,37 @@
+# Resumen del Repositorio Proyecto1
+
+Este repositorio contiene la implementación y el análisis del algoritmo de clustering **k-means** aplicado tanto a datos sintéticos como a datos reales. Se estructura en dos partes principales:
+
+## Punto 1: Datos Sintéticos
+
+- **Objetivo:** Implementar el algoritmo k-means desde cero sin utilizar librerías especializadas en clustering.
+- **Datos:** Se utilizan archivos `data_2d.csv` y `data_3d.csv`, que contienen datos sintéticos en espacios de 2D y 3D, respectivamente, con 5 clusters y etiquetas verdaderas.
+- **Tareas a realizar:**
+  - Carga y visualización de los datos.
+  - Análisis estadístico de las variables.
+  - Implementación del algoritmo k-means (inicialización aleatoria de centroides, asignación de puntos y actualización de centroides).
+  - Cálculo de la inercia utilizando la fórmula:
+    $$
+    \text{inercia} = \sum_{i=1}^{k} \sum_{x \in C_i} \|x - \mu_i\|_q^q
+    $$
+  - Experimentación con diferentes métricas de distancia (Euclidiana, Manhattan, Chebyshev y Mahalanobis) y análisis del impacto de cada una.
+  - Evaluación del rendimiento y análisis de la variación de resultados al cambiar la semilla de inicialización.
+
+## Punto 2: Datos Reales
+
+- **Objetivo:** Aplicar el algoritmo k-means a un conjunto de datos reales para identificar segmentos de clientes.
+- **Datos:** Se utiliza el archivo `Mall_Customers.csv`, que contiene información de clientes de un centro comercial.
+- **Tareas a realizar:**
+  - Carga y preprocesamiento de los datos (eliminación de variables categóricas y normalización de variables numéricas).
+  - Análisis estadístico y visualización de la información.
+  - Implementación del algoritmo k-means variando el número de clusters (de 2 a 10).
+  - Uso de la inercia y la regla del codo para determinar el número óptimo de clusters.
+  - Evaluación de la calidad del clustering y comparación con posibles segmentaciones basadas en la información original.
+
+## Gestión del Proyecto
+
+- **Control de versiones:** Se recomienda hacer commits y pushes frecuentes para documentar los avances y cambios significativos.
+- **Colaboración:** El repositorio debe ser compartido con el usuario **abelalv** en GitHub.
+- **Entrega:** La fecha de entrega del proyecto es el **27 de febrero de 2025**.
+
+Este repositorio integra análisis, visualizaciones y algoritmos para proporcionar una comprensión integral de cómo el algoritmo k-means puede aplicarse y evaluarse en diferentes contextos y con diversas métricas de distancia.
